@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UVM-rn-m4S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlaskaTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Details Available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glX-LW-uMA">
+                                <rect key="frame" x="37.5" y="348" width="300" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="79" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uOM-zF-EAl">
+                                <rect key="frame" x="0.0" y="125" width="375" height="542"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ATFlightDetailsCell" rowHeight="79" id="nVc-A0-rs9" customClass="ATFlightDetailsCell" customModule="AlaskaTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nVc-A0-rs9" id="oUl-TQ-7lL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gYj-Qk-do1">
+                                                    <rect key="frame" x="5" y="5" width="150" height="68.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Id :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF8-8h-iPS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Airport :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1L-CL-QPv">
+                                                            <rect key="frame" x="0.0" y="24" width="150" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pav-54-tHT">
+                                                            <rect key="frame" x="0.0" y="48.5" width="150" height="20"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Td-Pk-mIR">
+                                                    <rect key="frame" x="183.5" y="4" width="187.5" height="70.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Time :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxr-dI-T0V">
+                                                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="18"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival Time :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOY-oM-PrU">
+                                                            <rect key="frame" x="0.0" y="26" width="187.5" height="18.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Est Arrival :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blS-jy-dbd">
+                                                            <rect key="frame" x="0.0" y="52.5" width="187.5" height="18"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gYj-Qk-do1" firstAttribute="width" secondItem="oUl-TQ-7lL" secondAttribute="width" multiplier="0.4" id="J9c-Jq-W1L"/>
+                                                <constraint firstItem="gYj-Qk-do1" firstAttribute="top" secondItem="oUl-TQ-7lL" secondAttribute="top" constant="5" id="JWw-1O-Y5N"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Td-Pk-mIR" secondAttribute="trailing" constant="4" id="LaC-Zr-ZnN"/>
+                                                <constraint firstAttribute="bottom" secondItem="8Td-Pk-mIR" secondAttribute="bottom" constant="4" id="MUf-9V-Qnf"/>
+                                                <constraint firstItem="8Td-Pk-mIR" firstAttribute="width" secondItem="oUl-TQ-7lL" secondAttribute="width" multiplier="0.5" id="dAD-SQ-k6Q"/>
+                                                <constraint firstAttribute="bottom" secondItem="gYj-Qk-do1" secondAttribute="bottom" constant="5" id="kYi-VO-7Q6"/>
+                                                <constraint firstItem="gYj-Qk-do1" firstAttribute="leading" secondItem="oUl-TQ-7lL" secondAttribute="leading" constant="5" id="ugh-WN-C2K"/>
+                                                <constraint firstItem="8Td-Pk-mIR" firstAttribute="top" secondItem="oUl-TQ-7lL" secondAttribute="top" constant="4" id="vge-r9-Woq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblArrivalTIme" destination="xOY-oM-PrU" id="qyD-Qr-Ae1"/>
+                                            <outlet property="lblCurrentTime" destination="Wxr-dI-T0V" id="lLr-6t-svl"/>
+                                            <outlet property="lblEstimatedArrival" destination="blS-jy-dbd" id="K3Q-KV-Ddx"/>
+                                            <outlet property="lblFlightId" destination="NF8-8h-iPS" id="FZk-sA-33H"/>
+                                            <outlet property="lblOrigin" destination="Pav-54-tHT" id="zil-c5-fNJ"/>
+                                            <outlet property="lblairport" destination="t1L-CL-QPv" id="qFa-j3-mA8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="459-L1-pZe"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="U2r-Re-57Z"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Your Airport" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nhe-Kz-3xe">
+                                <rect key="frame" x="56.5" y="72" width="187.5" height="25"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="T0Q-pQ-Fsf"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9t-Eb-enf">
+                                <rect key="frame" x="251" y="69" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="xmH-dq-Y0V"/>
+                                </constraints>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="btnSearchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jnB-xG-6jj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nhe-Kz-3xe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.8" id="0aJ-xZ-67Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g9t-Eb-enf" secondAttribute="trailing" symbolic="YES" id="6oJ-EW-u6f"/>
+                            <constraint firstItem="glX-LW-uMA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BGC-ic-fDo"/>
+                            <constraint firstItem="uOM-zF-EAl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bqm-tl-rwf"/>
+                            <constraint firstItem="glX-LW-uMA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="ChZ-QL-WF5"/>
+                            <constraint firstItem="uOM-zF-EAl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="DIC-3O-A6l"/>
+                            <constraint firstItem="uOM-zF-EAl" firstAttribute="top" secondItem="nhe-Kz-3xe" secondAttribute="bottom" constant="28" id="Rh0-SG-q69"/>
+                            <constraint firstItem="nhe-Kz-3xe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="WTA-K4-Llw"/>
+                            <constraint firstItem="g9t-Eb-enf" firstAttribute="leading" secondItem="nhe-Kz-3xe" secondAttribute="trailing" constant="7" id="XAr-SJ-d4X"/>
+                            <constraint firstItem="glX-LW-uMA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cil-Rp-eOn"/>
+                            <constraint firstItem="uOM-zF-EAl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tvO-z6-Wbx"/>
+                            <constraint firstItem="nhe-Kz-3xe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="vln-hk-pmZ"/>
+                            <constraint firstItem="g9t-Eb-enf" firstAttribute="firstBaseline" secondItem="nhe-Kz-3xe" secondAttribute="firstBaseline" id="xAV-ad-ZN7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gpa-LS-kEN"/>
+                    <connections>
+                        <outlet property="lblMessage" destination="glX-LW-uMA" id="17K-Cj-tRQ"/>
+                        <outlet property="tableViewFlightDetails" destination="uOM-zF-EAl" id="fdN-N5-zzx"/>
+                        <outlet property="txtFieldAirports" destination="nhe-Kz-3xe" id="fxf-cz-cBt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Recent Airports Popover-->
+        <scene sceneID="C2U-SJ-O5J">
+            <objects>
+                <tableViewController storyboardIdentifier="RecentAirportsPopover" id="Mmx-QI-CNv" customClass="RecentAirportsPopover" customModule="AlaskaTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="35" sectionHeaderHeight="28" sectionFooterHeight="28" id="XHI-4C-iSu">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recentpopovercell" id="2Ux-KW-V7W">
+                                <rect key="frame" x="0.0" y="28" width="300" height="35"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Ux-KW-V7W" id="HK2-pQ-EE4">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="34.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mmx-QI-CNv" id="lkR-jv-vpv"/>
+                            <outlet property="delegate" destination="Mmx-QI-CNv" id="dUc-dI-hz7"/>
+                        </connections>
+                    </tableView>
+                    <size key="freeformSize" width="300" height="600"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8uA-rM-gQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1986" y="174"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uGc-OO-IYc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UVM-rn-m4S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bsB-mp-aOS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6uX-g1-hLi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="doY-QN-Bdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

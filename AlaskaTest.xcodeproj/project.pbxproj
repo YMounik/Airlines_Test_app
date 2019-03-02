@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69368D1421E73FA900AC859F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69368D1321E73FA900AC859F /* DataManager.swift */; };
+		69368D1B21E742B000AC859F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69368D1A21E742B000AC859F /* Constants.swift */; };
+		69368D1D21E7471000AC859F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69368D1C21E7471000AC859F /* Utilities.swift */; };
+		69368D2021E749B800AC859F /* FlightDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69368D1E21E749B800AC859F /* FlightDetails+CoreDataClass.swift */; };
+		69368D2121E749B800AC859F /* FlightDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69368D1F21E749B800AC859F /* FlightDetails+CoreDataProperties.swift */; };
+		69368D2321E75D1400AC859F /* RecentAirportsPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69368D2221E75D1400AC859F /* RecentAirportsPopover.swift */; };
+		6955C99821E6580B00655C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955C99721E6580B00655C20 /* AppDelegate.swift */; };
+		6955C99A21E6580B00655C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955C99921E6580B00655C20 /* ViewController.swift */; };
+		6955C99D21E6580B00655C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6955C99B21E6580B00655C20 /* Main.storyboard */; };
+		6955C9A021E6580B00655C20 /* AlaskaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6955C99E21E6580B00655C20 /* AlaskaTest.xcdatamodeld */; };
+		6955C9A221E6580D00655C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6955C9A121E6580D00655C20 /* Assets.xcassets */; };
+		6955C9A521E6580D00655C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6955C9A321E6580D00655C20 /* LaunchScreen.storyboard */; };
+		6955C9B021E6580E00655C20 /* AlaskaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955C9AF21E6580E00655C20 /* AlaskaTestTests.swift */; };
+		6955C9BB21E6580E00655C20 /* AlaskaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955C9BA21E6580E00655C20 /* AlaskaTestUITests.swift */; };
+		6955C9C921E65EB500655C20 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955C9C821E65EB500655C20 /* NetworkManager.swift */; };
+		6955C9CE21E708A600655C20 /* ATFlightDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955C9CD21E708A600655C20 /* ATFlightDetailsCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6955C9AC21E6580E00655C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6955C98C21E6580B00655C20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6955C99321E6580B00655C20;
+			remoteInfo = AlaskaTest;
+		};
+		6955C9B721E6580E00655C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6955C98C21E6580B00655C20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6955C99321E6580B00655C20;
+			remoteInfo = AlaskaTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69368D1321E73FA900AC859F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		69368D1A21E742B000AC859F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		69368D1C21E7471000AC859F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		69368D1E21E749B800AC859F /* FlightDetails+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlightDetails+CoreDataClass.swift"; sourceTree = "<group>"; };
+		69368D1F21E749B800AC859F /* FlightDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlightDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		69368D2221E75D1400AC859F /* RecentAirportsPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentAirportsPopover.swift; sourceTree = "<group>"; };
+		6955C99421E6580B00655C20 /* AlaskaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlaskaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6955C99721E6580B00655C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6955C99921E6580B00655C20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6955C99C21E6580B00655C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6955C99F21E6580B00655C20 /* AlaskaTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlaskaTest.xcdatamodel; sourceTree = "<group>"; };
+		6955C9A121E6580D00655C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6955C9A421E6580D00655C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6955C9A621E6580D00655C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6955C9AB21E6580E00655C20 /* AlaskaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlaskaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6955C9AF21E6580E00655C20 /* AlaskaTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaskaTestTests.swift; sourceTree = "<group>"; };
+		6955C9B121E6580E00655C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6955C9B621E6580E00655C20 /* AlaskaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlaskaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6955C9BA21E6580E00655C20 /* AlaskaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaskaTestUITests.swift; sourceTree = "<group>"; };
+		6955C9BC21E6580E00655C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6955C9C821E65EB500655C20 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6955C9CD21E708A600655C20 /* ATFlightDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATFlightDetailsCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6955C99121E6580B00655C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6955C9A821E6580E00655C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6955C9B321E6580E00655C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69368D1921E741D000AC859F /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				69368D1E21E749B800AC859F /* FlightDetails+CoreDataClass.swift */,
+				69368D1F21E749B800AC859F /* FlightDetails+CoreDataProperties.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		6955C98B21E6580B00655C20 = {
+			isa = PBXGroup;
+			children = (
+				6955C99621E6580B00655C20 /* AlaskaTest */,
+				6955C9AE21E6580E00655C20 /* AlaskaTestTests */,
+				6955C9B921E6580E00655C20 /* AlaskaTestUITests */,
+				6955C99521E6580B00655C20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6955C99521E6580B00655C20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6955C99421E6580B00655C20 /* AlaskaTest.app */,
+				6955C9AB21E6580E00655C20 /* AlaskaTestTests.xctest */,
+				6955C9B621E6580E00655C20 /* AlaskaTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6955C99621E6580B00655C20 /* AlaskaTest */ = {
+			isa = PBXGroup;
+			children = (
+				6955C99721E6580B00655C20 /* AppDelegate.swift */,
+				69368D1921E741D000AC859F /* Modals */,
+				6955C9CB21E7085F00655C20 /* Helpers */,
+				6955C9CA21E7084B00655C20 /* Views */,
+				6955C9CC21E7087300655C20 /* Resources */,
+				6955C9A621E6580D00655C20 /* Info.plist */,
+			);
+			path = AlaskaTest;
+			sourceTree = "<group>";
+		};
+		6955C9AE21E6580E00655C20 /* AlaskaTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				6955C9AF21E6580E00655C20 /* AlaskaTestTests.swift */,
+				6955C9B121E6580E00655C20 /* Info.plist */,
+			);
+			path = AlaskaTestTests;
+			sourceTree = "<group>";
+		};
+		6955C9B921E6580E00655C20 /* AlaskaTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6955C9BA21E6580E00655C20 /* AlaskaTestUITests.swift */,
+				6955C9BC21E6580E00655C20 /* Info.plist */,
+			);
+			path = AlaskaTestUITests;
+			sourceTree = "<group>";
+		};
+		6955C9CA21E7084B00655C20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6955C99921E6580B00655C20 /* ViewController.swift */,
+				6955C9CD21E708A600655C20 /* ATFlightDetailsCell.swift */,
+				69368D2221E75D1400AC859F /* RecentAirportsPopover.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6955C9CB21E7085F00655C20 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6955C9C821E65EB500655C20 /* NetworkManager.swift */,
+				69368D1C21E7471000AC859F /* Utilities.swift */,
+				69368D1321E73FA900AC859F /* DataManager.swift */,
+				69368D1A21E742B000AC859F /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6955C9CC21E7087300655C20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6955C99E21E6580B00655C20 /* AlaskaTest.xcdatamodeld */,
+				6955C9A121E6580D00655C20 /* Assets.xcassets */,
+				6955C99B21E6580B00655C20 /* Main.storyboard */,
+				6955C9A321E6580D00655C20 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6955C99321E6580B00655C20 /* AlaskaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6955C9BF21E6580E00655C20 /* Build configuration list for PBXNativeTarget "AlaskaTest" */;
+			buildPhases = (
+				6955C99021E6580B00655C20 /* Sources */,
+				6955C99121E6580B00655C20 /* Frameworks */,
+				6955C99221E6580B00655C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlaskaTest;
+			productName = AlaskaTest;
+			productReference = 6955C99421E6580B00655C20 /* AlaskaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6955C9AA21E6580E00655C20 /* AlaskaTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6955C9C221E6580E00655C20 /* Build configuration list for PBXNativeTarget "AlaskaTestTests" */;
+			buildPhases = (
+				6955C9A721E6580E00655C20 /* Sources */,
+				6955C9A821E6580E00655C20 /* Frameworks */,
+				6955C9A921E6580E00655C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6955C9AD21E6580E00655C20 /* PBXTargetDependency */,
+			);
+			name = AlaskaTestTests;
+			productName = AlaskaTestTests;
+			productReference = 6955C9AB21E6580E00655C20 /* AlaskaTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6955C9B521E6580E00655C20 /* AlaskaTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6955C9C521E6580E00655C20 /* Build configuration list for PBXNativeTarget "AlaskaTestUITests" */;
+			buildPhases = (
+				6955C9B221E6580E00655C20 /* Sources */,
+				6955C9B321E6580E00655C20 /* Frameworks */,
+				6955C9B421E6580E00655C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6955C9B821E6580E00655C20 /* PBXTargetDependency */,
+			);
+			name = AlaskaTestUITests;
+			productName = AlaskaTestUITests;
+			productReference = 6955C9B621E6580E00655C20 /* AlaskaTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6955C98C21E6580B00655C20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Kiran;
+				TargetAttributes = {
+					6955C99321E6580B00655C20 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6955C9AA21E6580E00655C20 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6955C99321E6580B00655C20;
+					};
+					6955C9B521E6580E00655C20 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6955C99321E6580B00655C20;
+					};
+				};
+			};
+			buildConfigurationList = 6955C98F21E6580B00655C20 /* Build configuration list for PBXProject "AlaskaTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6955C98B21E6580B00655C20;
+			productRefGroup = 6955C99521E6580B00655C20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6955C99321E6580B00655C20 /* AlaskaTest */,
+				6955C9AA21E6580E00655C20 /* AlaskaTestTests */,
+				6955C9B521E6580E00655C20 /* AlaskaTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6955C99221E6580B00655C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955C9A521E6580D00655C20 /* LaunchScreen.storyboard in Resources */,
+				6955C9A221E6580D00655C20 /* Assets.xcassets in Resources */,
+				6955C99D21E6580B00655C20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6955C9A921E6580E00655C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6955C9B421E6580E00655C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6955C99021E6580B00655C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955C9C921E65EB500655C20 /* NetworkManager.swift in Sources */,
+				69368D2321E75D1400AC859F /* RecentAirportsPopover.swift in Sources */,
+				69368D1421E73FA900AC859F /* DataManager.swift in Sources */,
+				6955C99A21E6580B00655C20 /* ViewController.swift in Sources */,
+				6955C9A021E6580B00655C20 /* AlaskaTest.xcdatamodeld in Sources */,
+				69368D2121E749B800AC859F /* FlightDetails+CoreDataProperties.swift in Sources */,
+				69368D2021E749B800AC859F /* FlightDetails+CoreDataClass.swift in Sources */,
+				6955C9CE21E708A600655C20 /* ATFlightDetailsCell.swift in Sources */,
+				6955C99821E6580B00655C20 /* AppDelegate.swift in Sources */,
+				69368D1D21E7471000AC859F /* Utilities.swift in Sources */,
+				69368D1B21E742B000AC859F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6955C9A721E6580E00655C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955C9B021E6580E00655C20 /* AlaskaTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6955C9B221E6580E00655C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955C9BB21E6580E00655C20 /* AlaskaTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6955C9AD21E6580E00655C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6955C99321E6580B00655C20 /* AlaskaTest */;
+			targetProxy = 6955C9AC21E6580E00655C20 /* PBXContainerItemProxy */;
+		};
+		6955C9B821E6580E00655C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6955C99321E6580B00655C20 /* AlaskaTest */;
+			targetProxy = 6955C9B721E6580E00655C20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6955C99B21E6580B00655C20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6955C99C21E6580B00655C20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6955C9A321E6580D00655C20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6955C9A421E6580D00655C20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6955C9BD21E6580E00655C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6955C9BE21E6580E00655C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6955C9C021E6580E00655C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlaskaTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.kiran.com.AlaskaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6955C9C121E6580E00655C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlaskaTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.kiran.com.AlaskaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6955C9C321E6580E00655C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlaskaTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.kiran.com.AlaskaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlaskaTest.app/AlaskaTest";
+			};
+			name = Debug;
+		};
+		6955C9C421E6580E00655C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlaskaTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.kiran.com.AlaskaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlaskaTest.app/AlaskaTest";
+			};
+			name = Release;
+		};
+		6955C9C621E6580E00655C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlaskaTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.kiran.com.AlaskaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlaskaTest;
+			};
+			name = Debug;
+		};
+		6955C9C721E6580E00655C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlaskaTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sample.kiran.com.AlaskaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlaskaTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6955C98F21E6580B00655C20 /* Build configuration list for PBXProject "AlaskaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6955C9BD21E6580E00655C20 /* Debug */,
+				6955C9BE21E6580E00655C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6955C9BF21E6580E00655C20 /* Build configuration list for PBXNativeTarget "AlaskaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6955C9C021E6580E00655C20 /* Debug */,
+				6955C9C121E6580E00655C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6955C9C221E6580E00655C20 /* Build configuration list for PBXNativeTarget "AlaskaTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6955C9C321E6580E00655C20 /* Debug */,
+				6955C9C421E6580E00655C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6955C9C521E6580E00655C20 /* Build configuration list for PBXNativeTarget "AlaskaTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6955C9C621E6580E00655C20 /* Debug */,
+				6955C9C721E6580E00655C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6955C99E21E6580B00655C20 /* AlaskaTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6955C99F21E6580B00655C20 /* AlaskaTest.xcdatamodel */,
+			);
+			currentVersion = 6955C99F21E6580B00655C20 /* AlaskaTest.xcdatamodel */;
+			path = AlaskaTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6955C98C21E6580B00655C20 /* Project object */;
+}
